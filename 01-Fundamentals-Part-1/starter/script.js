@@ -228,8 +228,6 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
   console.log('Someone else should drive!');
 }
-*/
-
 
 function average(scores) {
   let sum = 0;
@@ -266,3 +264,59 @@ const Score5 = { "name": "dolphins", "score": [97, 112, 101] };
 const Score6 = { "name": "koalas", "score": [109, 95, 106] };
 
 winner(Score5, Score6);
+
+
+
+const day = 'monday';
+switch (day) {
+  case 'monday':
+    console.log("Plan course structure");
+    console.log('Go to coding meetup');
+    break;
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+    break;
+  case 'friday':
+    console.log('Record videos!');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('enjoy weekend');
+  default:
+    console.log('not a valid day!')
+}
+
+if (day === 'monday') {
+  console.log("Plan course structure");
+  console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('Write code examples');
+} else if (day === 'friday') {
+  console.log('Record videos!');
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('enjoy weekend');
+
+} else {
+  console.log('not a valid day!')
+}
+
+
+const age = 23;
+age >= 18 ? console.log('I like to drink wine 🍷') : console.log('i like to drink water ')
+
+const age = 23;
+const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(drink)
+
+const age = 23;
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
+*/
+const bill = 430;
+const tip = bill >= 30 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total was ${bill + tip}.`);
